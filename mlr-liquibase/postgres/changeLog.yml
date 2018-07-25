@@ -1,4 +1,5 @@
 databaseChangeLog:
+  - logicalFilePath: changelog.yml
   - preConditions:
     - dbms:
         type: postgresql
