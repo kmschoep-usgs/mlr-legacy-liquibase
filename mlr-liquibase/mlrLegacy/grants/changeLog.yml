@@ -1,5 +1,5 @@
 databaseChangeLog:
-
+  - logicalFilePath: changelog.yml
   - changeSet:
       author: drsteini
       id: "grant.select.all.mlr_legacy_data.tables.mlr_legacy_user"

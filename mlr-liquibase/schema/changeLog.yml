@@ -1,5 +1,5 @@
 databaseChangeLog:
-
+  - logicalFilePath: changelog.yml
   - changeSet:
       author: drsteini
       id: "create_schema_mlr_legacy_data"

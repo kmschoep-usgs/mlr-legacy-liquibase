@@ -1,5 +1,5 @@
 databaseChangeLog:
-
+  - logicalFilePath: changelog.yml
   - include:
       file: "tables/changeLog.yml"
       relativeToChangelogFile: true
