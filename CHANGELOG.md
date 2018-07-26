@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - mlr-liquibase/liquibase.properties
 - mlr-liquibase/postgres.properties
 - readme.md
+- mlr-liquibase/mlrLegacy/testData/changeLog.yml
 
 ### Changed
 - added logicalFilePath to databaseChangeLogs
