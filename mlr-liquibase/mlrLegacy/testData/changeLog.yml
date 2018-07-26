@@ -1,0 +1,811 @@
+databaseChangeLog:
+
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISAK"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISAK.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISAL"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISAL.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISAR"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISAR.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISAZ"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISAZ.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISCA"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISCA.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISCO"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISCO.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISFL"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISFL.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISGA"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISGA.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISHI"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISHI.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISIA"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISIA.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISID"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISID.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISIL"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISIL.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISIN"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISIN.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISKS"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISKS.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISKY"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISKY.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISLA"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISLA.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISMA"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISMA.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISMD"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISMD.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISMI"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISMI.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISMN"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISMN.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISMO"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISMO.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISMS"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISMS.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISMT"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISMT.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISNC"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISNC.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISND"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISND.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISNE"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISNE.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISNJ"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISNJ.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISNM"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISNM.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISNV"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISNV.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISNY"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISNY.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISOH"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISOH.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISOK"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISOK.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISOR"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISOR.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISPA"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISPA.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISPR"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISPR.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISSC"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISSC.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISSD"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISSD.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISTN"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISTN.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISTX"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISTX.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISUT"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISUT.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISVA"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISVA.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISWA"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISWA.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISWI"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISWI.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISWV"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISWV.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_NWISWY"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "20171013_non_deprecated_sites_NWISWY.csv"
+            quotchar: '"'
+            schemaName: mlr_legacy_data
+            separator: ','
+            tableName: legacy_location
+            relativeToChangelogFile: true
