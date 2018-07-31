@@ -12,7 +12,6 @@ databaseChangeLog:
         - loadData:
             encoding: UTF-8
             file: "mlr_site_extraction.tsv"
-            quotchar: '"'
             schemaName: mlr_legacy_data
             separator: '\t'
             tableName: legacy_location_load
