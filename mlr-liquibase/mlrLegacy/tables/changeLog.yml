@@ -3,3 +3,6 @@ databaseChangeLog:
   - include:
       file: "legacyLocation/changeLog.yml"
       relativeToChangelogFile: true
+  - include:
+      file: "legacyLocationLoad/changeLog.yml"
+      relativeToChangelogFile: true
