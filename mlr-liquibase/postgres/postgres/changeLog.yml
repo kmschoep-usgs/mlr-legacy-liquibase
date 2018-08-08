@@ -1,0 +1,61 @@
+databaseChangeLog:
+  - logicalFilePath: changelog.yml
+  - preConditions:
+    - dbms:
+        type: postgresql
+    - runningAs:
+        username: postgres
+
+  - changeSet:
+      author: kmschoep
+      id: "create.project.owner.role.mlr_legacy"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - sqlCheck:
+            expectedResult: 0
+            sql: select count(*) from pg_roles where rolname = '${MLR_LEGACY}'
+      changes:
+        - sql: create role ${MLR_LEGACY} with login password '${MLR_LEGACY_PASSWORD}';
+        - rollback: drop role if exists ${MLR_LEGACY};
+
+  - changeSet:
+      author: kmschoep
+      id: "grant.mlr_legacy.to.postgres"
+      changes:
+        - sql: grant ${MLR_LEGACY} to postgres;
+        - rollback: revoke ${MLR_LEGACY} from postgres;
+
+  - changeSet:
+      author: kmschoep
+      id: "create.project.user.role.mlr_legacy_user"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - sqlCheck:
+            expectedResult: 0
+            sql: select count(*) from pg_roles where rolname = '${MLR_LEGACY_USER}'
+      changes:
+        - sql: create role ${MLR_LEGACY_USER} with login password '${MLR_LEGACY_USER_PASSWORD}';
+        - rollback: drop role if exists ${MLR_LEGACY_USER};
+
+  - changeSet:
+      author: kmschoep
+      id: "create.project.database.mlr_legacy"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - sqlCheck:
+            expectedResult: 0
+            sql: select count(*) from pg_database where datname = '${MLR_LEGACY_DATABASE_NAME}'
+      runInTransaction: false
+      changes:
+        - sql: create database ${MLR_LEGACY_DATABASE_NAME} with owner = '${MLR_LEGACY}';
+        - rollback: drop database ${MLR_LEGACY_DATABASE_NAME} if exists;
+
+  - changeSet:
+      author: kmschoep
+      id: "alter.database.mlr_legacy.search_path"
+      changes:
+        - sql: alter database ${MLR_LEGACY_DATABASE_NAME} set search_path = "$user", ${MLR_LEGACY}, public, tiger;
+        - rollback: alter database ${MLR_LEGACY_DATABASE_NAME} reset search_path;

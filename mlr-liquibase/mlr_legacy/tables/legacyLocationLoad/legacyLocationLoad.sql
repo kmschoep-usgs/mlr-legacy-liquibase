@@ -1,4 +1,4 @@
-create table mlr_legacy_data.legacy_location_load
+create table if not exists mlr_legacy_data.legacy_location_load
 (nwis_host_nm                   character varying(50)
 ,db_no                          character varying(50)
 ,agency_cd                      character(5)         
@@ -60,4 +60,3 @@ create table mlr_legacy_data.legacy_location_load
 ,site_md                        character varying(50)
 ,mcd_cd                         character(5)
 );
-alter table mlr_legacy_data.legacy_location_load owner to mlr_legacy_data;

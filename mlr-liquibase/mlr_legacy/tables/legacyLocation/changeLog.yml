@@ -2,7 +2,7 @@ databaseChangeLog:
   - logicalFilePath: changelog.yml
   - changeSet:
       author: drsteini
-      id: "create.table.mlr_legacy_data.legacy_location"
+      id: "create.table.legacy_location"
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT
@@ -13,4 +13,4 @@ databaseChangeLog:
         - sqlFile:
             path: legacyLocation.sql
             relativeToChangelogFile: true
-        - rollback: drop table mlr_legacy_data.legacy_location;
+        - rollback: drop table legacy_location;
