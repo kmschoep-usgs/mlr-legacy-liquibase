@@ -1,0 +1,47 @@
+databaseChangeLog:
+  - logicalFilePath: changelog.yml
+  - preConditions:
+    - dbms:
+        type: postgresql
+    - runningAs:
+        username: postgres
+
+  - changeSet:
+      author: kmschoep
+      id: "alter_databasechangelog_owner_mlr_legacy"
+      changes:
+        - sql: alter table public.databasechangelog owner to mlr_legacy;
+        - rollback: alter table public.databasechangelog owner to postgres;
+
+  - changeSet:
+      author: kmschoep
+      id: "alter_databasechangeloglock_owner_mlr_legacy"
+      changes:
+        - sql: alter table public.databasechangeloglock owner to mlr_legacy;
+        - rollback: alter table public.databasechangeloglock owner to postgres;
+        
+  - changeSet:
+      author: kmschoep
+      id: "create.project.schema.mlr_legacy_data"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - and:
+          - tableExists:
+              tableName: databasechangelog
+          - sqlCheck:
+              expectedResult: 0
+              sql: select count(*) from pg_namespace where nspname = '${MLR_LEGACY_SCHEMA_NAME}';
+      changes:
+        - sql:
+            sql: create schema ${MLR_LEGACY_SCHEMA_NAME} authorization mlr_legacy;
+      rollback:
+        - sql:
+            sql: drop schema if exists ${MLR_LEGACY_SCHEMA_NAME} cascade;
+
+  - changeSet:
+      author: kmschoep
+      id: "grant.usage.on.schema.mlr_legacy_data.to.mlr_legacy"
+      changes:
+        - sql: grant usage on schema ${MLR_LEGACY_SCHEMA_NAME} to ${MLR_LEGACY_USER};
+        - rollback: revoke usage on schema ${MLR_LEGACY_SCHEMA_NAME} from ${MLR_LEGACY_USER};

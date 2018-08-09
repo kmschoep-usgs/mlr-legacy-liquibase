@@ -1,4 +1,4 @@
-create table mlr_legacy_data.legacy_location
+create table if not exists mlr_legacy_data.legacy_location
 (legacy_location_id             bigserial               primary key
 ,agency_cd                      character(5)            not null
 ,site_no                        character(15)           not null
@@ -61,4 +61,3 @@ create table mlr_legacy_data.legacy_location
 ,constraint legacy_location_ak
   unique (agency_cd, site_no)
 );
-alter table mlr_legacy_data.legacy_location owner to mlr_legacy_data;
