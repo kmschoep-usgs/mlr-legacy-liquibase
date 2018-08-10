@@ -1,5 +1,5 @@
 databaseChangeLog:
-
+  - logicalFilePath: changelog.yml
   - changeSet:
       author: kmschoep
       id: "load.data.mlr_legacy_data.legacy_location_NWISAK"
@@ -7,7 +7,7 @@ databaseChangeLog:
         - onFail: MARK_RAN
         - onError: HALT
         - tableExists:
-            tableName: legacy_location
+            tableName: mlr_legacy_data.legacy_location
       changes:
         - loadData:
             encoding: UTF-8
