@@ -7,7 +7,8 @@ databaseChangeLog:
         - onFail: MARK_RAN
         - onError: HALT
         - tableExists:
-            tableName: mlr_legacy_data.legacy_location
+            schemaName: mlr_legacy_data
+            tableName: legacy_location
       changes:
         - loadData:
             encoding: UTF-8
