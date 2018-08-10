@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). (Patch version X.Y.0 is implied if not specified.)
 
+## [v1.4] 2018-08-10 - kmschoep@usgs.gov
+### changed
+- mlr-liquibase/mlr_legacy/testData/changeLog.yml to look in mlr_legacy_data for legacy_location table for all files to load
+
 ## [v1.3] 2018-08-10 - kmschoep@usgs.gov
 ### changed
 - mlr-liquibase/mlr_legacy/testData/changeLog.yml to look in mlr_legacy_data for legacy_location table
