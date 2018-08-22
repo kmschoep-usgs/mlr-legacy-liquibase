@@ -34,7 +34,7 @@ databaseChangeLog:
         - onError: HALT
         - sqlCheck:
             expectedResult: 0
-            sql: select count(*) from pg_roles where rolname = '${MLR_LEGACY_USER}'
+            sql: select count(*) from pg_roles where rolname = 'mlr_legacy_user'
       changes:
         - sql: create role mlr_legacy_user with login password '${MLR_LEGACY_USER_PASSWORD}';
         - rollback: drop role if exists mlr_legacy_user;
