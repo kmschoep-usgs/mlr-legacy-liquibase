@@ -31,17 +31,17 @@ databaseChangeLog:
               tableName: databasechangelog
           - sqlCheck:
               expectedResult: 0
-              sql: select count(*) from pg_namespace where nspname = '${MLR_LEGACY_SCHEMA_NAME}';
+              sql: select count(*) from pg_namespace where nspname = 'mlr_legacy_data';
       changes:
         - sql:
-            sql: create schema ${MLR_LEGACY_SCHEMA_NAME} authorization mlr_legacy;
+            sql: create schema mlr_legacy_data authorization mlr_legacy;
       rollback:
         - sql:
-            sql: drop schema if exists ${MLR_LEGACY_SCHEMA_NAME} cascade;
+            sql: drop schema if exists mlr_legacy_data cascade;
 
   - changeSet:
       author: kmschoep
       id: "grant.usage.on.schema.mlr_legacy_data.to.mlr_legacy"
       changes:
-        - sql: grant usage on schema ${MLR_LEGACY_SCHEMA_NAME} to ${MLR_LEGACY_USER};
-        - rollback: revoke usage on schema ${MLR_LEGACY_SCHEMA_NAME} from ${MLR_LEGACY_USER};
+        - sql: grant usage on schema mlr_legacy_data to mlr_legacy_user;
+        - rollback: revoke usage on schema mlr_legacy_data from mlr_legacy_user;

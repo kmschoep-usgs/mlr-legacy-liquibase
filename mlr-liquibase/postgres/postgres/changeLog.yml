@@ -14,17 +14,17 @@ databaseChangeLog:
         - onError: HALT
         - sqlCheck:
             expectedResult: 0
-            sql: select count(*) from pg_roles where rolname = '${MLR_LEGACY}'
+            sql: select count(*) from pg_roles where rolname = 'mlr_legacy'
       changes:
-        - sql: create role ${MLR_LEGACY} with login password '${MLR_LEGACY_PASSWORD}';
-        - rollback: drop role if exists ${MLR_LEGACY};
+        - sql: create role mlr_legacy with login password '${MLR_LEGACY_PASSWORD}';
+        - rollback: drop role if exists mlr_legacy;
 
   - changeSet:
       author: kmschoep
       id: "grant.mlr_legacy.to.postgres"
       changes:
-        - sql: grant ${MLR_LEGACY} to postgres;
-        - rollback: revoke ${MLR_LEGACY} from postgres;
+        - sql: grant mlr_legacy to postgres;
+        - rollback: revoke mlr_legacy from postgres;
 
   - changeSet:
       author: kmschoep
@@ -36,8 +36,8 @@ databaseChangeLog:
             expectedResult: 0
             sql: select count(*) from pg_roles where rolname = '${MLR_LEGACY_USER}'
       changes:
-        - sql: create role ${MLR_LEGACY_USER} with login password '${MLR_LEGACY_USER_PASSWORD}';
-        - rollback: drop role if exists ${MLR_LEGACY_USER};
+        - sql: create role mlr_legacy_user with login password '${MLR_LEGACY_USER_PASSWORD}';
+        - rollback: drop role if exists mlr_legacy_user;
 
   - changeSet:
       author: kmschoep
@@ -47,15 +47,15 @@ databaseChangeLog:
         - onError: HALT
         - sqlCheck:
             expectedResult: 0
-            sql: select count(*) from pg_database where datname = '${MLR_LEGACY_DATABASE_NAME}'
+            sql: select count(*) from pg_database where datname = 'mlr_legacy_data'
       runInTransaction: false
       changes:
-        - sql: create database ${MLR_LEGACY_DATABASE_NAME} with owner = '${MLR_LEGACY}';
-        - rollback: drop database ${MLR_LEGACY_DATABASE_NAME} if exists;
+        - sql: create database mlr_legacy_data with owner = 'mlr_legacy';
+        - rollback: drop database mlr_legacy_data if exists;
 
   - changeSet:
       author: kmschoep
       id: "alter.database.mlr_legacy.search_path"
       changes:
-        - sql: alter database ${MLR_LEGACY_DATABASE_NAME} set search_path = "$user", ${MLR_LEGACY}, public, tiger;
-        - rollback: alter database ${MLR_LEGACY_DATABASE_NAME} reset search_path;
+        - sql: alter database mlr_legacy_data set search_path = "$user", mlr_legacy, public;
+        - rollback: alter database mlr_legacy_data reset search_path;
