@@ -47,15 +47,15 @@ databaseChangeLog:
         - onError: HALT
         - sqlCheck:
             expectedResult: 0
-            sql: select count(*) from pg_database where datname = 'mlr_legacy_data'
+            sql: select count(*) from pg_database where datname = 'mlr_legacy'
       runInTransaction: false
       changes:
-        - sql: create database mlr_legacy_data with owner = 'mlr_legacy';
-        - rollback: drop database mlr_legacy_data if exists;
+        - sql: create database mlr_legacy with owner = 'mlr_legacy';
+        - rollback: drop database mlr_legacy if exists;
 
   - changeSet:
       author: kmschoep
       id: "alter.database.mlr_legacy.search_path"
       changes:
-        - sql: alter database mlr_legacy_data set search_path = "$user", mlr_legacy, public;
-        - rollback: alter database mlr_legacy_data reset search_path;
+        - sql: alter database mlr_legacy set search_path = "$user", mlr_legacy, public;
+        - rollback: alter database mlr_legacy reset search_path;
