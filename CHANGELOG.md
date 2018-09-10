@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). (Patch version X.Y.0 is implied if not specified.)
 
+## [v1.6] 2018-09-10 - kmschoep@usgs.gov
+### Added
+- loadData/changeLog.yml to load generated extraction files
+- populateLegacyLocation.sql to load legacy_location from legacy_location_load with some date transformations
+
 ## [v1.5] 2018-08-21 - kmschoep@usgs.gov
 ### changed
 - removed username variables and hardcoded usernames

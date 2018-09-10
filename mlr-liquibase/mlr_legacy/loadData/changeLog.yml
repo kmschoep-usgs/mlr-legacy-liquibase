@@ -1,0 +1,826 @@
+databaseChangeLog:
+  - logicalFilePath: changelog.yml
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ak"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ak.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_al"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_al.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ar"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ar.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_az"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_az.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ca"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ca.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_co"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_co.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_fl"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_fl.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ga"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ga.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_hi"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_hi.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ia"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ia.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_id"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_id.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_il"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_il.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_in"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_il.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ks"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_il.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ky"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ky.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_la"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_la.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ma"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ma.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_md"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_md.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_mi"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_md.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_mn"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_mn.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_mo"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_mo.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ms"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ms.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_mt"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_mt.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_nc"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_nc.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_nd"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_nd.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ne"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ne.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_nj"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_nj.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_nm"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_nm.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_nv"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_nv.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ny"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_ny
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ny.tsv
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_oh"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_oh.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ok"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ok.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_or"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_or.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_pa"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_pa.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_pr"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_pr.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_sc"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_sc.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_sd"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_sd.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_tn"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_tn.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_tx"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_tx.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_ut"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_ut.tsv
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_va"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_va.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_wa"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_wa.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_wi"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_wi.tsv
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_wv"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_wv.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+            
+  - changeSet:
+      author: kmschoep
+      id: "load.data.mlr_legacy_data.legacy_location_wy"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location_load
+      changes:
+        - loadData:
+            encoding: UTF-8
+            file: "mlr_site_extraction_wy.tsv"
+            schemaName: mlr_legacy_data
+            separator: '\t'
+            tableName: legacy_location_load
+            relativeToChangelogFile: true
+           
+  - changeSet:
+      author: kmschoep
+      id: "load.table.mlr_legacy_data.legacy_location"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+        - tableExists:
+            schemaName: mlr_legacy_data
+            tableName: legacy_location
+            tableName: legacy_location_load
+      changes:
+        - sqlFile:
+            path: populateLegacyLocation.sql
+            relativeToChangelogFile: true
+        - rollback: truncate table mlr_legacy_data.legacy_location;
