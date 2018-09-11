@@ -534,7 +534,7 @@ databaseChangeLog:
       changes:
         - loadData:
             encoding: UTF-8
-            file: "mlr_site_extraction_ny.tsv
+            file: "mlr_site_extraction_ny.tsv"
             schemaName: mlr_legacy_data
             separator: '\t'
             tableName: legacy_location_load
@@ -714,7 +714,7 @@ databaseChangeLog:
       changes:
         - loadData:
             encoding: UTF-8
-            file: "mlr_site_extraction_ut.tsv
+            file: "mlr_site_extraction_ut.tsv"
             schemaName: mlr_legacy_data
             separator: '\t'
             tableName: legacy_location_load
@@ -768,7 +768,7 @@ databaseChangeLog:
       changes:
         - loadData:
             encoding: UTF-8
-            file: "mlr_site_extraction_wi.tsv
+            file: "mlr_site_extraction_wi.tsv"
             separator: '\t'
             tableName: legacy_location_load
             relativeToChangelogFile: true
