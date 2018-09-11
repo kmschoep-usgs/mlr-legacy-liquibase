@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). (Patch version X.Y.0 is implied if not specified.)
 
+## [v1.8] 2018-09-11 - kmschoep@usgs.gov
+### Changed
+- loadData/changeLog.yml, add columns in order to be loaded
+
 ## [v1.7] 2018-09-11 - kmschoep@usgs.gov
 ### Changed
 - loadData/changeLog.yml, added missing double-quotes
