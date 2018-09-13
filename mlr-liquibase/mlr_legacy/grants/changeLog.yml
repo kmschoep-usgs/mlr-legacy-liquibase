@@ -15,4 +15,12 @@ databaseChangeLog:
         - sql:
             sql: grant insert, update on all tables in schema mlr_legacy_data to mlr_legacy_user;
         - rollback: revoke insert, update on all tables in schema mlr_legacy_data from mlr_legacy_user;
+        
+  - changeSet:
+      author: kmschoep
+      id: "grant.select.update.all.mlr_legacy_data.sequences.mlr_legacy_user"
+      changes:
+        - sql:
+            sql: grant select, update on all sequences in schema mlr_legacy_data to mlr_legacy_user;
+        - rollback: revoke select, update on all sequences in schema mlr_legacy_data from mlr_legacy_user;
      
