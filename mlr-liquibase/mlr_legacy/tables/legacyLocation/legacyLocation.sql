@@ -33,7 +33,7 @@ create table if not exists mlr_legacy_data.legacy_location
 ,inventory_dt                   character(8)            not null default ' '
 ,drain_area_va                  character(8)            not null default ' '
 ,contrib_drain_area_va          character(8)            not null default ' '
-,tz_cd                          character(5)            not null default ' '
+,tz_cd                          character(6)            not null default ' '
 ,local_time_fg                  character(1)            not null default ' '
 ,gw_file_cd                     character(20)           not null default ' '
 ,construction_dt                character(8)            not null default ' '
