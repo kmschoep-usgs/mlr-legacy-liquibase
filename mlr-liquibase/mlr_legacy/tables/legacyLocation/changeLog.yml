@@ -14,3 +14,11 @@ databaseChangeLog:
             path: legacyLocation.sql
             relativeToChangelogFile: true
         - rollback: drop table legacy_location;
+  - changeSet:
+      author: mhines
+      id: "modify.table.legacyLocationTzcdSize"
+      changes:
+        - sqlFile:
+            path: legacyLocationTzcdSize.sql
+            relativeToChangelogFile: true
+        - rollback: alter table mlr_legacy_data.legacy_location alter column tz_cd type character(5);
