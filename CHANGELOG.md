@@ -88,3 +88,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - added logicalFilePath to databaseChangeLogs
+
+[Unreleased]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v2.3...master
+[v2.3]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v2.2...v2.3
+[v2.2]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v2.1...v2.2
+[v2.1]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v2.0...v2.1
+[v2.0]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.9...v2.0
+[v1.9]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.8...v1.9
+[v1.8]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.7...v1.8
+[v1.7]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.6...v1.7
+[v1.6]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.5...v1.6
+[v1.5]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.4...v1.5
+[v1.4]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.3...v1.4
+[v1.3]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.2...v1.3
+[v1.2]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.1...v1.2
+[v1.1]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/compare/v1.0...v1.1
+[v1.0]: https://github.com/USGS-CIDA/mlr-legacy-liquibase/releases/tag/v1.0
