@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). (Patch version X.Y.0 is implied if not specified.)
 
+## [Unreleased]
+
+## [v2.3] 2019-04-12 - zmoore@usgs.gov - End of Pilot
+### Changed
+- No changes, release marks the end of the pilot
+
+## [v2.2] 2018-11-30 - mhines@usgs.gov
+### Changed
+- Made tz_cd 6 characters
+
 ## [v2.1] 2018-09-13 - kmschoep@usgs.gov
 ### Changed
 - mlr-liquibase/mlr_legacy/grants/changeLog.yml, grant insert and update on mlr_legacy_data functions to mlr_legacy_user
