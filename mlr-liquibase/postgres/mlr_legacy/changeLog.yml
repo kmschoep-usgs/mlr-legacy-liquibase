@@ -45,3 +45,28 @@ databaseChangeLog:
       changes:
         - sql: grant usage on schema mlr_legacy_data to mlr_legacy_user;
         - rollback: revoke usage on schema mlr_legacy_data from mlr_legacy_user;
+        
+  - changeSet:
+      author: kmschoep
+      id: "create.audit.schema.triggers"
+      changes:
+        - sqlFile:
+            path: audit.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+        - rollback: drop schema audit cascade;
+        
+  - changeSet:
+      author: kmschoep
+      id: "grant.usage.audit.mlr_legacy_user"
+      changes:
+        - sql: grant usage on schema audit to mlr_legacy_user;
+        - rollback: revoke usage on schema audit from mlr_legacy_user;
+        
+  - changeSet:
+      author: kmschoep
+      id: "grant.select.audit.logged_actions.mlr_legacy_user"
+      changes:
+        - sql: grant select on table audit.logged_actions to mlr_legacy_user;
+        - rollback: revoke select on table audit.logged_actions from mlr_legacy_user;
+
