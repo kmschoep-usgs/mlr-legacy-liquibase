@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). (Patch version X.Y.0 is implied if not specified.)
 
 ## [Unreleased]
+### Added
+- 2020-04-14 - kmschoep@usgs.gov: audit logging via an audit schema, triggers and functions to track all CRUD operations
+- 2020-04-14 - kmschoep@usgs.gov: logged_actions_vw, which queries the logged_actions table.
 
 ## [v2.3] 2019-04-12 - zmoore@usgs.gov - End of Pilot
 ### Changed

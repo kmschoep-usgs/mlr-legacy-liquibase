@@ -31,4 +31,19 @@ databaseChangeLog:
         - sql:
             sql: grant execute on all functions in schema mlr_legacy_data to mlr_legacy_user;
         - rollback: revoke select, update on all functions in schema mlr_legacy_data from mlr_legacy_user;
+
+  - changeSet:
+      author: kmschoep
+      id: "grant.select.audit.logged_actions.mlr_legacy_user"
+      changes:
+        - sql: grant select on table audit.logged_actions to mlr_legacy_user;
+        - rollback: revoke select on table audit.logged_actions from mlr_legacy_user;
+
+  - changeSet:
+      author: kmschoep
+      id: "grant.select.audit.logged_actions.mlr_legacy"
+      changes:
+        - sql: grant select on table audit.logged_actions to mlr_legacy with grant option;
+        - rollback: revoke select on table audit.logged_actions from mlr_legacy;
+
      
