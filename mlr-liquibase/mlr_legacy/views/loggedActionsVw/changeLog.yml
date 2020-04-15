@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - logicalFilePath: changelog.yml
+  - changeSet:
+      author: kmschoep
+      id: "create.view.logged_actions_vw"
+      preConditions:
+        - onFail: MARK_RAN
+        - onError: HALT
+      changes:
+        - sqlFile:
+            path: loggedActionsVw.sql
+            relativeToChangelogFile: true
+        - rollback: drop view logged_actions_vw;
+
+  - changeSet:
+      author: kmschoep
+      id: "grant.select.mlr_legacy_data.logged_actions_vw.mlr_legacy_user"
+      changes:
+        - sql: grant select on table mlr_legacy_data.logged_actions_vw to mlr_legacy_user;
+        - rollback: revoke select on table mlr_legacy_data.logged_actions_vw from mlr_legacy_user;
+

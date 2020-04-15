@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - logicalFilePath: changelog.yml
+  - include:
+      file: "loggedActionsVw/changeLog.yml"
+      relativeToChangelogFile: true
+

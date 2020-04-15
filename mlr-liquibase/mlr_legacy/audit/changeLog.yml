@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - logicalFilePath: changelog.yml
+
+  - changeSet:
+      author: kmschoep
+      id: "create.audit.triggers"
+      changes:
+        - sqlFile:
+            path: audit.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+        - rollback: select "no rollback";
+
+  - changeSet:
+      author: kmschoep
+      id: "turn.on.auditing.mlr_legacy_data.legacy_location"
+      changes:
+        - sql: SELECT audit.audit_table('mlr_legacy_data.legacy_location', 'true', 'false');
+        - rollback: select "no rollback";
+
