@@ -26,5 +26,5 @@ databaseChangeLog:
       author: kmschoep
       id: "add.comment.table.legacyLocation"
       changes:
-        - sql: comment on table legacy_location IS 'Stores location metadata.';
+        - sql: comment on table mlr_legacy_data.legacy_location IS 'Stores location metadata.';
         - rollback: comment on table mytable IS NULL;
