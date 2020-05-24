@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - 2020-04-14 - kmschoep@usgs.gov: audit logging via an audit schema, triggers and functions to track all CRUD operations
 - 2020-04-14 - kmschoep@usgs.gov: logged_actions_vw, which queries the logged_actions table.
+- 2020-05-24 - kmschoep@usgs.gov: Add comment to legacy_location table.
 
 ## [v2.3] 2019-04-12 - zmoore@usgs.gov - End of Pilot
 ### Changed
